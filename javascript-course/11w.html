@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11w</title>
+  </head>
+  <body>
+    <script>
+      function findIndex(array, word) {
+
+        for (let i = 0; i < array.length; i++) {
+
+          if (array[i] === word) {
+            return i;
+          }
+        }
+            return -1;
+      }
+
+      function unique(array) {
+        const result = [];
+
+        for (let i = 0; i < array.length; i++) {
+          const word = array[i];
+
+          if (findIndex(result, word) === -1) { 
+            result.push(word);
+          }
+        }
+        return result;
+      }
+
+      console.log(unique(['green', 'red', 'blue', 'red']));
+      console.log(unique(['red', 'green', 'green', 'red']));
+
+
+      
+      
+/* 11q
+searches on the array which is the parameter word
+next is to return the index of the first appearance of the string
+if it doesn't exist, return -1  */
+
+
+/* 11w
+create a function "unique(array)" that takes an array of strings and returns an array where each string only appears once (there are no duplicates) below the previous array 
+*/
+
+    </script>
+  </body>
+</html>
