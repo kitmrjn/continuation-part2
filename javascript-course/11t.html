@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11t</title>
+  </head>
+  <body>
+    <script>
+      function removeEgg(foods) {
+
+       const reversedFoods  = foods.reverse();
+       const result = [];
+       let removedEggs = 0;
+
+        for (let i = 0; i < foods.length; i++) {
+          if (foods[i] === 'egg' && removedEggs < 2) {
+            removedEggs++
+            continue;
+          }
+          result.push(foods[i]);
+        }
+        return result.reverse();
+      }
+      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+
+/*
+create a function, use the parameter "food" to store the strings,
+the array will be use for the loop, if the egg is find it will be skipped, using the  "continue", return the array where the string egg is removed, finnaly create a array "result" to store the false index "apple and ham"
+*/
+
+/*Update remove only the first 2 eggs in the array, create avarible removedEggs to store the removed eggs from the array*/
+
+/*
+update use that .reverse() to reverse the order of the array and make the output like this [egg, apple, ham]*/
+    </script>
+  </body>
+</html>

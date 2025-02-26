@@ -1,0 +1,33 @@
+p{
+  font-family: Arial;
+}
+body{
+  background-color: black;
+}
+.number {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(53, 51, 51);
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
+  margin: 3px;
+}
+
+.operator {
+  height: 60px;
+  width: 60px;
+  background-color:orange;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
+  margin: 3px;
+}
+
+.display-result {
+  color: white;
+  font-size: 50px;
+  margin: 3px;
+}

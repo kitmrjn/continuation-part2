@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twelve E</title>  
+  </head>
+  <body> 
+    <button class="js-add-to-cart-button" onclick="
+        addMessage();">
+        Add to cart
+    </button>
+    <p class="js-message"></p>
+    <script>
+        let timeout;
+        function addMessage() {
+          const add =  document.querySelector('.js-message');
+            add.innerHTML = 'Added';
+
+                clearTimeout(timeout);
+
+            timeout =  setTimeout (function() {
+                add.innerHTML = '';
+            }, 2000);
+           
+        }
+    </script>
+  </body>
+</html>
